@@ -29,6 +29,9 @@ if( function_exists( 'add_image_size' ) ) {
   add_image_size( 'opengraph', 1200, 630, true );
 
   add_image_size( 'post-thumb', 700, 1500, true );
+
+
+  add_image_size( 'post-thumb', 700, 1500, true );
 }
 
 // Register Nav Menus

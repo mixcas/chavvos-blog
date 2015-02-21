@@ -17,15 +17,18 @@ if( have_posts() ) {
 
     <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-      <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-        <?php
-        if(get_post_meta($post->ID, 'vid', true))
-          echo get_post_meta($post->ID, 'vid', true);
-        elseif(has_post_thumbnail())
-          the_post_thumbnail('post-thumb');
-        ?>
-
-      <?php the_content(); ?>
+    <a href="<?php the_permalink() ?>">
+      <div>
+    <?php
+    if(get_post_meta($post->ID, 'vid', true))
+      echo get_post_meta($post->ID, 'vid', true);
+    elseif(has_post_thumbnail())
+      the_post_thumbnail('post-thumb');
+    ?>
+      </div>
+    <?php the_title(); ?>
+    </a>
+    <?php the_content(); ?>
 
     </article>
 
@@ -47,5 +50,5 @@ if( have_posts() ) {
 </main>
 
 <?php
-get_footer();
+  get_footer();
 ?>
