@@ -1,4 +1,4 @@
-wp_boil
+blog.chavvos.com
 -------
 
 Starting point for our wordpress themes
