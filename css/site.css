@@ -961,30 +961,6 @@ ul.u-inline-list li {
 .genericon-zoom:before {
   content: "\f402";
 }
-@font-face {
-  font-family: 'WorkSans';
-  src: url("fonts/WorkSans/WorkSans-Bold.otf") format('opentype'), url("fonts/WorkSans/WorkSans-Bold.woff") format('woff'), url("fonts/WorkSans/WorkSans-Bold.woff2") format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'WorkSans';
-  src: url("fonts/WorkSans/WorkSans-Light.otf") format('opentype'), url("fonts/WorkSans/WorkSans-Light.woff") format('woff'), url("fonts/WorkSans/WorkSans-Light.woff2") format('woff2');
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'WorkSans';
-  src: url("fonts/WorkSans/WorkSans-Regular-woff.woff") format('opentype'), url("fonts/WorkSans/WorkSans-Regular.otf") format('woff'), url("fonts/WorkSans/WorkSans-Regular.woff2") format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'WorkSans';
-  src: url("fonts/WorkSans/WorkSans-Thin.otf") format('opentype'), url("fonts/WorkSans/WorkSans-Thin.woff") format('woff'), url("fonts/WorkSans/WorkSans-Thin.woff2") format('woff2');
-  font-weight: lighter;
-  font-style: normal;
-}
 .container {
   margin: 0 auto;
   width: 1272px;
@@ -1047,6 +1023,7 @@ h1 {
 }
 h2 {
   font-size: 2em;
+  line-height: 1.6;
 }
 h3 {
   font-size: 1.5em;
@@ -1075,6 +1052,9 @@ img {
   height: auto;
 }
 #main-container {
+  padding: 30px 10px;
+}
+#main-content {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -1086,6 +1066,12 @@ img {
 }
 .post {
   width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+}
+.post img {
+  max-width: 100%;
 }
 #pagination {
   width: 100%;
@@ -1093,8 +1079,24 @@ img {
 #footer {
   width: 100%;
 }
+.u-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.u-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 1272px) {
   html {
     width: 100%;
+  }
+  h1 {
+    font-size: 16vw;
   }
 }

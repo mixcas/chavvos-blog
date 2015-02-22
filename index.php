@@ -18,15 +18,15 @@ if( have_posts() ) {
     <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
     <a href="<?php the_permalink() ?>">
-      <div>
     <?php
-    if(get_post_meta($post->ID, 'vid', true))
+    if(get_post_meta($post->ID, 'vid', true)) {
+      echo '<div class="u-video-wrapper">';
       echo get_post_meta($post->ID, 'vid', true);
-    elseif(has_post_thumbnail())
+      echo '</div>';
+    } elseif(has_post_thumbnail())
       the_post_thumbnail('post-thumb');
     ?>
-      </div>
-    <?php the_title(); ?>
+    <h2><?php the_title(); ?></h2>
     </a>
     <?php the_content(); ?>
 
