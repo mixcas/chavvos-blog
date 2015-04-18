@@ -2,5 +2,11 @@
 /*global $, jQuery, document */
 jQuery(document).ready(function () {
   'use strict';
-  console.log('Hola Globie');
+  /*
+   * Change page title if inside iframe
+   */
+
+  if (window.self !== window.top) {
+    jQuery('#site-title').text('BLOG');
+  }
 });

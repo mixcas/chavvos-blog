@@ -1,4 +1,5 @@
     <footer id="footer">
+      <p>POWERED BY <a href="http://chavvos.com/">#chavvos</a></p>
     </footer>
 
   </section>
