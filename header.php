@@ -14,6 +14,7 @@
   <link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon-touch.png">
   <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.png">
 
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/modernizr.js"></script>
   <script type="text/javascript">
