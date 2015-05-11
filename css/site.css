@@ -1012,7 +1012,7 @@ ul.u-inline-list li {
 }
 body {
   font-family: 'Oswald', helvetica, arial, sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.5em;
   letter-spacing: 0.001em;
 }
@@ -1020,13 +1020,11 @@ h1 {
   font-size: 6em;
   line-height: 1.6;
   font-style: italic;
-  font-family: 'Rock Salt', cursive;
 }
 h2 {
   font-size: 2em;
   line-height: 1.6;
   font-style: italic;
-  font-family: 'Rock Salt', cursive;
   margin: 15px 0;
 }
 h3 {
@@ -1084,12 +1082,12 @@ img {
 .post img {
   max-width: 100%;
 }
+.post p a {
+  text-decoration: underline;
+}
 #pagination {
   width: 100%;
   text-align: center;
-}
-#pagination a {
-  text-decoration: none;
 }
 #footer {
   width: 100%;
